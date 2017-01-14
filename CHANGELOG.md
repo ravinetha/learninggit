@@ -3,6 +3,10 @@ v0.25 + 1
 
 ### Changes or improvements
 
+* libssh2, used for the in-tree SSH functionality, is now loaded at runtime if
+  it's available. This is to make redistribution and combination at the consumer
+  side of these libraries easier.
+
 ### API additions
 
 ### API removals
