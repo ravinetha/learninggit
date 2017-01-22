@@ -234,7 +234,6 @@ int git_attr_cache__get(
 		/* remove existing entry */
 		if (file) {
 			attr_cache_remove(cache, file);
-			git_attr_file__free(file); /* offset incref from lookup */
 			file = NULL;
 		}
 		/* no error if file simply doesn't exist */
