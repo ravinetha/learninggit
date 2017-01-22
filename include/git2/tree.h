@@ -387,7 +387,7 @@ GIT_EXTERN(int) git_treebuilder_write(
  * @return 0 or an error code
  */
 GIT_EXTERN(int) git_treebuilder_write_with_buffer(
-	git_oid *oid, git_treebuilder *bld, git_buf *tree);
+	git_oid *id, git_treebuilder *bld, git_buf *tree);
 
 /** Callback for the tree traversal method */
 typedef int (*git_treewalk_cb)(
